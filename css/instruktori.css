@@ -1,0 +1,36 @@
+div.instruktori {
+    border: 1px solid #ccc;
+}
+
+div.instruktori:hover {
+    border: 1px solid #777;
+}
+
+div.instruktori img {
+    height: auto;
+    width: 100%;
+}
+
+div.tekst {
+    padding: 15px;
+    text-align: center;
+}
+
+#instruktori {
+    border-bottom: 20px;
+}
+
+#instruktorinaslov {
+    margin-bottom: 10px;
+}
+
+.instruktori{
+    display: inline-block;
+}
+
+.slika-trener{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

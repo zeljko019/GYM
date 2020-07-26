@@ -1,0 +1,21 @@
+/* Ikonice kod kontakta */
+#facebook-ikonica-kontakt {
+    height: 50px;
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+#instagram-ikonica-kontakt {
+    height: 50px;
+    float: right;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+#facebook-ikonica-kontakt:hover {
+    border-bottom: solid 4px black;
+}
+
+#instagram-ikonica-kontakt:hover {
+    border-bottom: solid 4px black;
+}

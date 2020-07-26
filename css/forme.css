@@ -1,0 +1,61 @@
+/* FORME */
+/*input[type=text]*/#ime-text{
+    background-color: white;
+    height: 30px;
+}
+
+#prezime-text{
+    background-color: white;
+    height: 30px;
+}
+
+#email-text{
+    background-color: white;
+    height: 30px;
+}
+
+textarea {
+    background-color: white;
+    height: 250px;
+}
+
+form {
+    background-color: black;
+    border: none;
+}
+
+#posalji {
+    height: 50px;
+    color: black;
+    background-color: white;
+    border-style: none;
+    border-radius: 10%;
+}
+
+#posalji:hover{
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-bottom: solid 4px black;
+    border-top: solid 4px black;
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+}
+
+#reset {
+    height: 50px;
+    color: black;
+    background-color: white;
+    border-style: none;
+    border-radius: 10%;
+}
+
+#reset:hover{
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-bottom: solid 4px black;
+    border-top: solid 4px black;
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+}

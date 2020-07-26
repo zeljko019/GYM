@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+
+        <!-- Meta tagovi -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+        <META NAME="abstract" CONTENT="Teretana"> <!-- Duzi opis  -->
+        <META NAME="author" CONTENT="Željko Đokić"> <!-- Ime autora -->
+        <META name="Classification" content="Gym, Workout, Sport"> <!-- Kategorija sajta, gym-teretana, workout-trening. -->
+        <META name="Copyright" content="Copyright © June. 18, 2020"> <!-- Zaštita autorskih prava. -->
+        <META NAME="description" CONTENT="Teretana.">  <!-- Opis stranice. -->
+        <META NAME="keywords" CONTENT="teretana, gym, niš, nis, sport, joga, fitnes"> <!-- Reči ili fraze kod pretraživanja. -->
+        <META name="Title" content="TERETANA">  <!-- Duži naslov. -->
+
+        <title>TERETANA</title> <!-- Naslov. -->
+        <link rel="icon" href="slike/ikonice/ikona.svg"> <!-- Ikonica kod pretraživača. -->
+
+                                    <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/stil.css"/>            <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/ikonice-kontakt.css"/> <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/datum.css"/>           <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/dugmad.css"/>          <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/forme.css"/>           <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/instruktori.css"/>     <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="css/tabela.css"/>          <!--CSS-->
+
+        <style>
+
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+
+            .slikaprva {
+
+                background-image: url("slike/teretana/9.jpg");
+
+                height: 100%;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 90;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="slikaprva"></div>
+        <button onclick="scrollFunction()" id="vrh" title="Početak stranice"><img height="15px" src="slike/ikonice/ikonica-vrh.png"></button> <!-- Dugme za vrh stranice. -->
+        <div>
+            <nav>
+                <ul id="meni" class="meni">
+                    <li>
+                        <div class="taster" class="container" onclick="funkcija(this)">
+                            <div class="crta"></div>
+                            <div class="crta"></div>
+                            <div class="crta"></div>
+                        </div>
+                    </li>
+                    <li id="meni1"><a href="index.html">POČETNA</a></li>
+                    <li id="meni2"><a href="#instruktori">INSTRUKTORI</a></li>
+                    <li id="meni3"><a href="#cenovnik-link">CENOVNIK</a></li>
+                    <li id="meni4"><a href="#galerija-link">GALERIJA</a></li>
+                    <li id="meni5"><a href="#kontakt-link">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div><br><br>
+
+        <!-- ---------- INSTRUKTORI ---------- -->
+        <div id="instruktori"> <!-- Ikonice preuzete sa "https://www.flaticon.com/" -->
+            <center><h2 id="instruktorinaslov">INSTRUKTORI</h2></center>
+
+            <div class="col-4" class="instruktori" >
+                <a target="_blank" href="slike/instruktori/1.svg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img class="slika-trener" src="slike/instruktori/1.svg" alt="Petar Petrović - menadžer teretane.">
+                </a>
+                <div class="tekst">Petar Petrović, menadžer teretane.</div> <!-- Postavlja tekst ispod slike. -->
+            </div>
+
+            <div  class="col-4">
+                <a target="_blank" href="slike/instruktori/2.svg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img class="slika-trener" src="slike/instruktori/2.svg" alt="Marko Marković - instruktor fitnesa.">
+                </a>
+                <div class="tekst">Marko Marković, instruktor fitnesa</div>
+            </div>
+
+            <div  class="col-4">
+                <a target="_blank" href="slike/instruktori/3.svg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img class="slika-trener" src="slike/instruktori/3.svg" alt="Nikola Nikolić - personalni trener.">
+                </a>
+                <div class="tekst">Nikola Nikolić, personalni trener.</div>
+            </div>
+
+            <div  class="col-4">
+                <a target="_blank" href="slike/instruktori/4.svg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img class="slika-trener" src="slike/instruktori/4.svg" alt="Ana Anić - instruktor aerobika.">
+                </a>
+                <div class="tekst">Ana Anić, instruktor aerobika.</div>
+            </div>
+
+            <div  class="col-4">
+                <a target="_blank" href="slike/instruktori/5.svg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img class="slika-trener" src="slike/instruktori/5.svg" alt="Jovan Jovanović - personalni trener.">
+                </a>
+                <div class="tekst">Jovan Jovanović, personalni trener.</div>
+            </div>
+
+            <div class="col-4">
+                <a target="_blank" href="slike/instruktori/6.svg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img class="slika-trener" src="slike/instruktori/6.svg" alt="Mara Marić - instruktor joge.">
+                </a>
+                <div class="tekst">Mara Marić, instruktor joge.</div>
+            </div>
+        </div>
+
+        <!-- ---------- CENOVNIK ---------- -->
+        <div id="cenovnik">
+            <!--<div class="col-1">&nbsp</div>-->
+
+            <table id="tabela1"  frame="lhs" border="6" class="tabela-cenovnik">
+                <tr>
+                    <td colspan="2">MUŠKARCI VREME 07:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>30 dana</td>
+                    <td>1700 RSD</td>
+                </tr>
+                <tr>
+
+                    <td colspan="2">MUŠAKRCI VREME 12:00 - 16:00</td>
+                </tr>
+                <tr>
+
+                    <td>30 dana</td>
+                    <td>1500 RSD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">MUŠKARCI VREME 07:00 - 23:00</td>
+                </tr>
+                <tr>
+                    <td>30 dana</td>
+                    <td>2000 RSD</td>
+                </tr>
+            </table>
+            <p id="cenovnik-link"></p>
+            <br><hr width="75%"><br>
+
+            <table id="tabela2" frame="lhs" border="6" class="tabela-cenovnik">
+                <tr>
+                    <td colspan="2">MUŠKARCI VREME 07:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>15 dana</td>
+                    <td>1000 RSD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">MUŠAKRCI VREME 12:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>15 dana</td>
+                    <td>800 RSD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">MUŠKARCI VREME 07:00 - 23:00</td>
+                </tr>
+                <tr>
+                    <td>15 dana</td>
+                    <td>1500 RSD</td>
+                </tr>
+            </table>
+
+            <br><hr width="75%"><br>
+
+            <table id="tabela3" frame="lhs" border="6" class="tabela-cenovnik">
+                <tr>
+                    <td colspan="2">ŽENE VREME 07:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>30 dana</td>
+                    <td>900 RSD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">ŽENE VREME 12:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>30 dana</td>
+                    <td>800 RSD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">ŽENE VREME 07:00 - 23:00</td>
+                </tr>
+                <tr>
+                    <td>30 dana</td>
+                    <td>1000 RSD</td>
+                </tr>
+            </table>
+
+            <br><hr width="75%"><br>
+
+            <table id="tabela4" frame="lhs" border="6" class="tabela-cenovnik">
+                <tr>
+                    <td colspan="2">ŽENE VREME 07:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>15 dana</td>
+                    <td>500 RSD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">ŽENE VREME 12:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>15 dana</td>
+                    <td>400 RSD</td>
+                </tr>
+                <tr>
+                    <td colspan="2">ŽENE VREME 07:00 - 23:00</td>
+                </tr>
+                <tr>
+                    <td>15 dana</td>
+                    <td>700 RSD</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ---------- GALERIJA ---------- -->
+        <div style="margin-left: 70px" style="margin-right: 70px" style="margin-top:20px" style="margin-bottom:20px" id="galerija" >
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/1.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/1.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+               <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/2.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/2.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div id="galerija-link" style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/3.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/3.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/4.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/4.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/5.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/5.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/6.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/6.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/7.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/7.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/8.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/8.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/9.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/9.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/10.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/10.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/11.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/11.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/12.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/12.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/13.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/13.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/14.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/14.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/15.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/15.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+
+            <div style="margin-top:20px" class="col-3" >
+                <a  target="_blank" href="slike/teretana/16.jpg"> <!-- _blanc - Otvara sliku u novom prozoru. -->
+                    <img style="border-radius: 10%"  src="slike/teretana/16.jpg" width="250px" height="250px" alt="TERETANA">
+                </a>
+                <!-- <div class="tekst"></div> -->
+            </div>
+        </div>
+
+        <!-- ---------- KONTAKT ---------- -->
+        <div id="kontakt" class="row">
+           <center>
+               <table id="kontakt-link" width="85%">
+                    <tr>
+                        <td class="col-8">
+                            <div>
+                                <form name="kontaktForma" method="POST" onsubmit="return validacija()" action="mailto:info@teretana.com">
+                                    <fieldset>
+                                        <center><legend><H2>PORUKA</H2></legend></center>
+
+                                        <!-- Ime -->
+                                        <br>
+                                        <div class="col-1">&nbsp</div>
+                                        <label class="col-2" id="ime">Ime:</label>
+                                        <input name="ime"  id="ime-text" class="col-8" maxlength="20" type="text" placeholder="Ime">
+                                        <div class="col-1">&nbsp</div><br><br>
+                                        <!-- name="ime", služi za validaciju u okviru JS.-->
+
+                                        <!-- Prezime -->
+                                        <div class="col-1">&nbsp</div>
+                                        <label class="col-2"  id="prezime">Prezime:</label>
+                                        <input name="prezime" id="prezime-text" class="col-8" maxlength="20" type="text" placeholder="Prezime">
+                                        <div class="col-1">&nbsp</div><br><br>
+
+                                        <!-- Email -->
+                                        <div class="col-1">&nbsp</div>
+                                        <label class="col-2" id="email">Email:</label>
+                                        <input name="email" id="email-text" class="col-8" placeholder="Email" type="email">
+                                        <div class="col-1">&nbsp</div><br><br><br>
+
+                                        <!-- Poruka -->
+                                        <div class="col-1">&nbsp</div>
+                                        <textarea class="col-10" name="poruka" cols="50" rows="10">Poruka</textarea>
+                                        <div class="col-1">&nbsp</div>
+
+                                        <div class="col-12">&nbsp</div>
+                                        <div class="col-12">&nbsp</div>
+
+                                        <!-- Pošalji -->
+                                        <div class="col-2">&nbsp</div>
+                                        <input id="posalji" class="col-3" type="submit" value="POŠALJI">
+                                        <div class="col-2">&nbsp</div>
+                                        <input id="reset" class="col-3" type="reset" value="RESETUJ">
+                                        <div class="col-2">&nbsp</div>
+                                        <div class="col-12">&nbsp</div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </td>
+                        <td class="col-4">
+                            <div>
+                                <table cellpadding="20" cellspacing="20" border="0">
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"><b><address>Adresa</address></b></td>
+                                        <td style="border-left: medium double #FFFFFF;">Višegradska 33<br/>18000 Niš <br/>Srbija</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"><b>Telefon</b></td>
+                                        <td style="border-left: medium double #FFFFFF;">018 345-678</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"><b>Email</b></td>
+                                        <td style="border-left: medium double #FFFFFF;">info@teretana.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right"><b>Web adresa</b></td>
+                                        <td style="border-left: medium double #FFFFFF;">www.teretana.com</td>
+                                    </tr>
+                                    <tr></tr>
+                                </table>
+                                <div>
+                                    <a href="https://www.facebook.com/"><img id="facebook-ikonica-kontakt" src="slike/ikonice/facebook.svg"></a>
+                                    <a href="https://www.instagram.com/"><img id="instagram-ikonica-kontakt" src="slike/ikonice/instagram.svg"></a>
+                                </div><br><br><br><br><br>
+                                <div>
+                                    <!--<center><button id="dugme-portal" type="button"><a href="portal.html">PORTAL</a></button></center> -->
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div>
+                                <center><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11612.923700463074!2d21.9226641!3d43.3094251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcd7e789ecdc18e15!2z0J_RgNC40YDQvtC00L3Qvi3QvNCw0YLQtdC80LDRgtC40YfQutC4INGE0LDQutGD0LvRgtC10YI!5e0!3m2!1ssr!2srs!4v1591712190561!5m2!1ssr!2srs"
+                                                width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></center>
+                                <!-- Mapa, preuzeta sa Google Maps. Pod postavkom Deli -> Ugradite mapu. -->
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+           </center>
+        </div>
+
+        <footer class="col-12">
+            <!-- <center><p>&copy; 2020<script>new Date().getFullYear()>2020&&document.write("-"+new Date().getFullYear());</script>, Teretana.</p></center> -->
+            <!-- Ispisuje godinu u formatu 2020 - trenutna, u slučaju da je trenutna 2020, ispisuje samo 2020. -->
+            <center><p  id="datumprava"></p></center>
+            <p  id="datum"></p> <!-- Ispisuje datum u formatu 2020 - "trenutna godina" -->
+        </footer>
+        <script src="js/dugme.js"></script>
+        <script src="js/datum.js"></script>
+        <script src="js/dugme-meni.js"></script>
+        <script src="js/dogadjaj.js"></script>
+    </body>
+</html>
