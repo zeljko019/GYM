@@ -1,2 +1,2 @@
 # GYM
-Gym website, project from the subject "Web programming".
+Gym website, project from the "Web programming".
